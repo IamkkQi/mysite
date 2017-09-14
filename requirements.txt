@@ -1,0 +1,18 @@
+django
+
+moore
+
+django-debug-toolbar # 网页调试包，在config中定义debug_toolbar的配置，可以在html中显示调试工具
+django-environ
+django-extensions
+django-filter
+django-flat-responsive
+django-redis-cache
+
+hiredis
+
+psycopg2
+
+requests
+
+pyjwt
