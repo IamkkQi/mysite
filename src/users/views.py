@@ -4,4 +4,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def hello(request):
-    return HttpResponse('柴颖颖最美!')
+    return HttpResponse('<h1>柴颖颖最美!</h1>')
