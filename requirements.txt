@@ -8,6 +8,8 @@ django-extensions
 django-filter
 django-flat-responsive
 django-redis-cache
+djangorestframework==3.6.2
+djangorestframework-jwt
 
 hiredis
 

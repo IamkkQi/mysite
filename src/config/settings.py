@@ -36,6 +36,10 @@ ALLOWED_HOSTS = ['*']
 INSTALLED_APPS = [
     # 自定义
     'users.apps.UsersConfig',
+    'mysite.apps.MysiteConfig',
+
+    # Django第三方应用
+    'rest_framework',
 
     # django原生
     'django.contrib.admin',
@@ -125,3 +129,14 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = 'users.User'
+
+
+# 第三方配置
+
+# Django Rest Framework
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+    'PAGE_SIZE': 10
+}
