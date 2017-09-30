@@ -1,0 +1,26 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="text" name="username" id="username">
+<button type="button" value="提交" id="btn">提交</button>
+
+<script type="text/javascript" src="{% static 'jquery/jquery.min.js' %}"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#btn").click(function () {
+            alert(1)
+            $.post('/mysite/users/get_user/', {'username': $("#username").val()}, function (data) {
+                alert(data)
+                console.log(data)
+            });
+        })
+    })
+</script>
+</body>
+</html>
